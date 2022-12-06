@@ -403,7 +403,7 @@ impl<const CAP: usize> ArrayString<CAP>
     }
 
     /// Return a string slice of the whole `ArrayString`.
-    pub fn as_str(&self) -> &str {
+    pub const fn as_str(&self) -> &str {
         self
     }
 
